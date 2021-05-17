@@ -11,6 +11,7 @@ This project was completed in April 2021 and it was used to learn python. The ai
 - Finally, have fun!
 - Insert "quit" in "Your guess:" to end the game.
 
+<img alt="Hangman Preview" height="250em" src="https://github.com/Magueija/hangman/blob/main/images/hangman_start.png?raw=true" />
 
 ## Getting Started
 
