@@ -11,14 +11,14 @@ This project was completed in April 2021 and it was used to learn python. The ai
 - Finally, have fun!
 - Insert "quit" in "Your guess:" to end the game.
 
-<img alt="Hangman Preview" height="250em" src="https://github.com/Magueija/hangman/blob/main/images/hangman_start.png?raw=true" />
+<img alt="Hangman Preview" height="250em" src="https://github.com/Magueija/hangman/blob/main/images/hangman_preview.png?raw=true" />
 
 ## Getting Started
 
-Run the command `python3 main.py` to start the game. See the exemple bellow :
+Run the command `python3 src/main.py` to start the game. See the exemple bellow :
 ```
 cd hangman
-python3 main.py
+python3 src/main.py
 ```
 
 ## Authors
