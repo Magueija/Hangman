@@ -6,8 +6,7 @@ import clear
 def hm_save_score(nr_games, nr_wins, avg_wrongs):
     name = ""
     fd = -1
-    file_path = os.path.join("scoreboards", "scoreboard.csv")
-    csv_rd = None
+    file_path = os.path.join(os.getcwd(), "scoreboards", "scoreboard.csv").replace('\\','/')
     csv_wt = None
 
     while (name == "" or " " in name or len(name) > 25):
@@ -19,15 +18,16 @@ def hm_save_score(nr_games, nr_wins, avg_wrongs):
             if (len(name) > 25):
                 print("Username max length is 25 characters.")
             print("\n")
+    if not os.path.exists(file_path.replace("scoreboard.csv", "")):
+        os.makedirs(file_path.replace("scoreboard.csv", ""), exist_ok=True)
     with open(file_path, "a", newline='') as fd:
         csv_wt = csv.writer(fd, delimiter=',')
         csv_wt.writerow([name, str(nr_wins) + "/" + str(nr_games), str(avg_wrongs)])
 
 def hm_show_score():
     fd = -1
-    file_path = os.path.join("scoreboards", "scoreboard.csv")
+    file_path = os.path.join(os.getcwd(), "scoreboards", "scoreboard.csv").replace('\\','/')
     csv_rd = None
-    csv_list = ()
     spaces_len_0 = 1
     spaces_len_1 = 1
     spaces_len_2 = 1
