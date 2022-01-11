@@ -15,7 +15,7 @@ This project was completed in April 2021 and it was used to learn python. The ai
 
 ## Getting Started
 
-Run the command `python3 src/main.py` to start the game. See the example bellow :
+Run the command `python3 src/main.py` to start the game. See the example below :
 ```
 cd hangman
 python3 src/main.py
